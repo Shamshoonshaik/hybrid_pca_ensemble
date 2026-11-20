@@ -1,0 +1,17 @@
+HYBRID PCA AND ENSEMBLE LEARNING FOR HIGH-DIMENSIONAL CLASSIFICATION
+Input features: 500
+PCA components selected: 353
+Explained variance retained: 0.9508
+Dimension reduction: 29.40%
+Test ROC-AUC: 0.9126
+Test F1-score: 0.8080
+5-fold CV ROC-AUC: 0.9065 +/- 0.0112
+
+Model comparison:
+                                  model  accuracy  precision   recall       f1  roc_auc  fit_seconds
+      Random Forest (original features)  0.894444   0.908537 0.866279 0.886905 0.948958     0.843130
+        Proposed: PCA + Voting Ensemble  0.813889   0.796610 0.819767 0.808023 0.912636     5.400543
+              PCA + Logistic Regression  0.808333   0.784530 0.825581 0.804533 0.894452     1.376699
+Logistic Regression (original features)  0.802778   0.788571 0.802326 0.795389 0.870392     0.053646
+
+Note: synthetic benchmark results are not evidence of real-world deployment performance.

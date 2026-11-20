@@ -1,0 +1,64 @@
+{
+  "dataset": {
+    "source": "sklearn.datasets.make_classification (synthetic)",
+    "samples": 1800,
+    "features": 500,
+    "classes": 2,
+    "train_samples": 1440,
+    "test_samples": 360,
+    "random_state": 42
+  },
+  "proposed_model": "Proposed: PCA + Voting Ensemble",
+  "pca": {
+    "retained_variance_threshold": 0.95,
+    "components_selected": 353,
+    "original_features": 500,
+    "explained_variance_sum": 0.9507745228290854,
+    "dimension_reduction_percent": 29.400000000000006
+  },
+  "test_metrics": {
+    "accuracy": 0.8138888888888889,
+    "precision": 0.7966101694915254,
+    "recall": 0.8197674418604651,
+    "f1": 0.8080229226361032,
+    "roc_auc": 0.9126360712518554
+  },
+  "cross_validation_roc_auc": {
+    "fold_scores": [
+      0.9246376811594201,
+      0.8909178743961352,
+      0.9000966183574879,
+      0.906366317010683,
+      0.910233479963262
+    ],
+    "mean": 0.9064503941773976,
+    "std": 0.011195765741784653
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.8306010928961749,
+      "recall": 0.8085106382978723,
+      "f1-score": 0.8194070080862533,
+      "support": 188.0
+    },
+    "1": {
+      "precision": 0.7966101694915254,
+      "recall": 0.8197674418604651,
+      "f1-score": 0.8080229226361032,
+      "support": 172.0
+    },
+    "accuracy": 0.8138888888888889,
+    "macro avg": {
+      "precision": 0.8136056311938502,
+      "recall": 0.8141390400791687,
+      "f1-score": 0.8137149653611783,
+      "support": 360.0
+    },
+    "weighted avg": {
+      "precision": 0.8143609850472867,
+      "recall": 0.8138888888888889,
+      "f1-score": 0.8139679450378483,
+      "support": 360.0
+    }
+  }
+}
